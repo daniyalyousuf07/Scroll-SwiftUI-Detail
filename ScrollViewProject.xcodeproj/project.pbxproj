@@ -28,6 +28,9 @@
 		17163AA8298AE7A1001C7D26 /* ScrollIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17163AA7298AE7A1001C7D26 /* ScrollIndicatorView.swift */; };
 		17163AAA298AED59001C7D26 /* PinnedScrollableExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17163AA9298AED59001C7D26 /* PinnedScrollableExampleView.swift */; };
 		17E50295298BA84D00C6FAA1 /* ScrollGridExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E50294298BA84D00C6FAA1 /* ScrollGridExampleView.swift */; };
+		70704F4E2A7477F300876327 /* Grid1Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F4D2A7477F300876327 /* Grid1Example.swift */; };
+		70704F512A7481BF00876327 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F502A7481BF00876327 /* Photo.swift */; };
+		70704F532A74822700876327 /* PhotoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F522A74822700876327 /* PhotoContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		17163AA7298AE7A1001C7D26 /* ScrollIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollIndicatorView.swift; sourceTree = "<group>"; };
 		17163AA9298AED59001C7D26 /* PinnedScrollableExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedScrollableExampleView.swift; sourceTree = "<group>"; };
 		17E50294298BA84D00C6FAA1 /* ScrollGridExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollGridExampleView.swift; sourceTree = "<group>"; };
+		70704F4D2A7477F300876327 /* Grid1Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid1Example.swift; sourceTree = "<group>"; };
+		70704F502A7481BF00876327 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		70704F522A74822700876327 /* PhotoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 		17163A74298AD9C8001C7D26 /* ScrollViewProject */ = {
 			isa = PBXGroup;
 			children = (
+				70704F4F2A7481B200876327 /* PhotoModule */,
+				70704F4C2A7477C800876327 /* Grids */,
 				17163A75298AD9C8001C7D26 /* ScrollViewProjectApp.swift */,
 				17163A97298ADAF1001C7D26 /* custom cells */,
 				17163AA6298AE6DA001C7D26 /* scrollview content */,
@@ -149,6 +157,23 @@
 				17054C7A2990F16D00884903 /* InspirationListView.swift */,
 			);
 			path = "scrollview content";
+			sourceTree = "<group>";
+		};
+		70704F4C2A7477C800876327 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				70704F4D2A7477F300876327 /* Grid1Example.swift */,
+			);
+			path = Grids;
+			sourceTree = "<group>";
+		};
+		70704F4F2A7481B200876327 /* PhotoModule */ = {
+			isa = PBXGroup;
+			children = (
+				70704F502A7481BF00876327 /* Photo.swift */,
+				70704F522A74822700876327 /* PhotoContentView.swift */,
+			);
+			path = PhotoModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,12 +256,15 @@
 				17163AA5298AE4C3001C7D26 /* InspirationTillView.swift in Sources */,
 				17163A8F298AD9D1001C7D26 /* ScrollFixedTextView.swift in Sources */,
 				17163A8E298AD9D1001C7D26 /* HorizontalScrollExampleView.swift in Sources */,
+				70704F512A7481BF00876327 /* Photo.swift in Sources */,
+				70704F532A74822700876327 /* PhotoContentView.swift in Sources */,
 				17163A78298AD9C8001C7D26 /* ContentView.swift in Sources */,
 				17163AA8298AE7A1001C7D26 /* ScrollIndicatorView.swift in Sources */,
 				17163A8C298AD9D1001C7D26 /* PagingScrollView.swift in Sources */,
 				17163A8D298AD9D1001C7D26 /* ProgrammaticScrollExampleView.swift in Sources */,
 				17054C7D2990FFC500884903 /* InspirationGridSectionView.swift in Sources */,
 				17163A76298AD9C8001C7D26 /* ScrollViewProjectApp.swift in Sources */,
+				70704F4E2A7477F300876327 /* Grid1Example.swift in Sources */,
 				17163AA1298AE3CB001C7D26 /* DisableScrollExampleView.swift in Sources */,
 				17E50295298BA84D00C6FAA1 /* ScrollGridExampleView.swift in Sources */,
 				17163A9D298ADC2B001C7D26 /* InspirationCardView.swift in Sources */,

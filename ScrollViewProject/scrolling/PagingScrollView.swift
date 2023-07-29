@@ -24,10 +24,9 @@ struct PagingScrollView: View {
                 LazyHGrid(rows: rows, alignment: .top, spacing: 0) {
                     ForEach(natureInspiration) { inspiration in
                         InspirationRowView(inspiration: inspiration)
-                            .frame(width: geometry.size.width - (2 * padding),
-                                   alignment: .leading)
-                            .padding(.horizontal, padding)
-                    }
+                    } .frame(width: geometry.size.width - (2 * padding),
+                             alignment: .leading)
+                      .padding(.horizontal, padding)
                 }
             }
         }
