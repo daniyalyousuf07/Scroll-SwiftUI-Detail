@@ -31,6 +31,14 @@
 		70704F4E2A7477F300876327 /* Grid1Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F4D2A7477F300876327 /* Grid1Example.swift */; };
 		70704F512A7481BF00876327 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F502A7481BF00876327 /* Photo.swift */; };
 		70704F532A74822700876327 /* PhotoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F522A74822700876327 /* PhotoContentView.swift */; };
+		70704F5E2A74A5B400876327 /* GetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F582A74A5B400876327 /* GetRequest.swift */; };
+		70704F5F2A74A5B400876327 /* PutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F592A74A5B400876327 /* PutRequest.swift */; };
+		70704F602A74A5B400876327 /* DeleteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F5A2A74A5B400876327 /* DeleteRequest.swift */; };
+		70704F612A74A5B400876327 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F5B2A74A5B400876327 /* NetworkService.swift */; };
+		70704F622A74A5B400876327 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F5C2A74A5B400876327 /* PostRequest.swift */; };
+		70704F632A74A5B400876327 /* PostRequestMultipart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F5D2A74A5B400876327 /* PostRequestMultipart.swift */; };
+		70704F662A74A5DD00876327 /* CatbreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F652A74A5DD00876327 /* CatbreedModel.swift */; };
+		70704F682A74A6FE00876327 /* HorizontalScroll+Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704F672A74A6FE00876327 /* HorizontalScroll+Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +67,14 @@
 		70704F4D2A7477F300876327 /* Grid1Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid1Example.swift; sourceTree = "<group>"; };
 		70704F502A7481BF00876327 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		70704F522A74822700876327 /* PhotoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoContentView.swift; sourceTree = "<group>"; };
+		70704F582A74A5B400876327 /* GetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRequest.swift; sourceTree = "<group>"; };
+		70704F592A74A5B400876327 /* PutRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutRequest.swift; sourceTree = "<group>"; };
+		70704F5A2A74A5B400876327 /* DeleteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteRequest.swift; sourceTree = "<group>"; };
+		70704F5B2A74A5B400876327 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		70704F5C2A74A5B400876327 /* PostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		70704F5D2A74A5B400876327 /* PostRequestMultipart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequestMultipart.swift; sourceTree = "<group>"; };
+		70704F652A74A5DD00876327 /* CatbreedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatbreedModel.swift; sourceTree = "<group>"; };
+		70704F672A74A6FE00876327 /* HorizontalScroll+Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HorizontalScroll+Service.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +108,8 @@
 		17163A74298AD9C8001C7D26 /* ScrollViewProject */ = {
 			isa = PBXGroup;
 			children = (
+				70704F642A74A5DD00876327 /* Model */,
+				70704F572A74A5B400876327 /* Network */,
 				70704F4F2A7481B200876327 /* PhotoModule */,
 				70704F4C2A7477C800876327 /* Grids */,
 				17163A75298AD9C8001C7D26 /* ScrollViewProjectApp.swift */,
@@ -172,8 +190,30 @@
 			children = (
 				70704F502A7481BF00876327 /* Photo.swift */,
 				70704F522A74822700876327 /* PhotoContentView.swift */,
+				70704F672A74A6FE00876327 /* HorizontalScroll+Service.swift */,
 			);
 			path = PhotoModule;
+			sourceTree = "<group>";
+		};
+		70704F572A74A5B400876327 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				70704F582A74A5B400876327 /* GetRequest.swift */,
+				70704F592A74A5B400876327 /* PutRequest.swift */,
+				70704F5A2A74A5B400876327 /* DeleteRequest.swift */,
+				70704F5B2A74A5B400876327 /* NetworkService.swift */,
+				70704F5C2A74A5B400876327 /* PostRequest.swift */,
+				70704F5D2A74A5B400876327 /* PostRequestMultipart.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		70704F642A74A5DD00876327 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70704F652A74A5DD00876327 /* CatbreedModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,21 +293,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				17163A96298ADA27001C7D26 /* NatureInspiration.swift in Sources */,
+				70704F632A74A5B400876327 /* PostRequestMultipart.swift in Sources */,
+				70704F622A74A5B400876327 /* PostRequest.swift in Sources */,
 				17163AA5298AE4C3001C7D26 /* InspirationTillView.swift in Sources */,
 				17163A8F298AD9D1001C7D26 /* ScrollFixedTextView.swift in Sources */,
 				17163A8E298AD9D1001C7D26 /* HorizontalScrollExampleView.swift in Sources */,
 				70704F512A7481BF00876327 /* Photo.swift in Sources */,
+				70704F612A74A5B400876327 /* NetworkService.swift in Sources */,
 				70704F532A74822700876327 /* PhotoContentView.swift in Sources */,
+				70704F5F2A74A5B400876327 /* PutRequest.swift in Sources */,
 				17163A78298AD9C8001C7D26 /* ContentView.swift in Sources */,
 				17163AA8298AE7A1001C7D26 /* ScrollIndicatorView.swift in Sources */,
+				70704F5E2A74A5B400876327 /* GetRequest.swift in Sources */,
+				70704F662A74A5DD00876327 /* CatbreedModel.swift in Sources */,
 				17163A8C298AD9D1001C7D26 /* PagingScrollView.swift in Sources */,
 				17163A8D298AD9D1001C7D26 /* ProgrammaticScrollExampleView.swift in Sources */,
 				17054C7D2990FFC500884903 /* InspirationGridSectionView.swift in Sources */,
 				17163A76298AD9C8001C7D26 /* ScrollViewProjectApp.swift in Sources */,
 				70704F4E2A7477F300876327 /* Grid1Example.swift in Sources */,
+				70704F682A74A6FE00876327 /* HorizontalScroll+Service.swift in Sources */,
 				17163AA1298AE3CB001C7D26 /* DisableScrollExampleView.swift in Sources */,
 				17E50295298BA84D00C6FAA1 /* ScrollGridExampleView.swift in Sources */,
 				17163A9D298ADC2B001C7D26 /* InspirationCardView.swift in Sources */,
+				70704F602A74A5B400876327 /* DeleteRequest.swift in Sources */,
 				17054C7B2990F16D00884903 /* InspirationListView.swift in Sources */,
 				17163AAA298AED59001C7D26 /* PinnedScrollableExampleView.swift in Sources */,
 				17163A9B298ADB31001C7D26 /* InspirationRowView.swift in Sources */,
