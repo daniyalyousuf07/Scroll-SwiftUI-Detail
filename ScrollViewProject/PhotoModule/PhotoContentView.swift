@@ -25,6 +25,19 @@ struct PhotoContentView: View {
                 }
                 .padding(.all, 10)
                 .animation(.interactiveSpring(), value: gridLayout.count)
+                
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 50))]) {
+                    ForEach(samplePhotos) { photo in
+                        Image(photo.name)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .frame(height: 50)
+                            .cornerRadius(10)
+                    }
+                }
+                .frame(minHeight: 0, maxHeight: .infinity, alignment: .top)
+                .animation(.easeIn, value: gridLayout.count)
             }
 
             .navigationTitle("Coffee Feed")
